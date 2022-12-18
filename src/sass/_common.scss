@@ -90,18 +90,25 @@
     margin-right: auto;
     margin-bottom: 30px;
   }
+
   .info {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
   }
+
+
   .info-item {
     text-align: center;
   }
+
+
   .info-item:not(:last-child) {
     margin-right: 15px;
   }
+
+  
   .gallery img {
     display: block;
     width: 100%;
