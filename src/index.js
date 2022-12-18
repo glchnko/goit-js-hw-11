@@ -44,16 +44,13 @@ function fetchImages() {
             Notify.info(`Sorry, there are no images matching your search query: ${fetchImagesService.searchQuery}. Please try again.`);
             return;
         }
-        appendImagesMarkup(data);
-        onPageScrolling()
+        appendImgMarkup(data);
         lightbox.refresh();
-        const { totalHits } = data;
+        const { images } = data;
 
         if (refs.containerDiv.children.length === totalHits ) {
             Notify.info(`We're sorry, but you've reached the end of search results.`);
-            loadMoreBtn.hide();
         } else {
-            loadMoreBtn.enable();
             Notify.success(`Hooray! We found ${totalHits} images.`);
         }
     }).catch(handleError);
