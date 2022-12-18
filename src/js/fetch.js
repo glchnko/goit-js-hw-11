@@ -32,3 +32,28 @@ class FetchImagesService {
 
 export { FetchImagesService };
 
+
+
+// class FetchImagesService {
+//     constructor(){
+//         this.searchQuery = '';
+//         this.page = 1;
+//     }
+
+//     fetchImages() {
+//         return axios.get(`/?key=${API_KEY}&q=${this.searchQuery}&page=${this.page}&${PARAM}`).then(data => {
+//             this.incrementPage();
+//             return data;
+//         })
+//     }
+
+//     incrementPage() {
+//         this.page += 1;
+//     }
+
+//     resetPage() {
+//         this.page = 1;
+//     }
+// }
+
+// export { FetchImagesService };
